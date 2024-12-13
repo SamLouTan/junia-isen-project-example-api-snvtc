@@ -10,3 +10,6 @@ terraform.tfstate.backup
 
 # Ignore terraform variables file
 *.tfvars
+
+#Ignore variables env
+*.env
