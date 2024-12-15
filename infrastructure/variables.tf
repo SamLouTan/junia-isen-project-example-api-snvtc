@@ -18,7 +18,7 @@ variable "username_db" {
 variable "password_db" {
   description = "Password for the database"
   type        = string
-  sensitive = true
+  sensitive   = true
 }
 
 variable "docker_image_name" {
