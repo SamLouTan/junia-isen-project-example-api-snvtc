@@ -26,4 +26,5 @@ jobs:
 
     - name: Run unit tests
       run: |
+        export PYTHONPATH=$(pwd)/api
         pytest api/tests --junitxml=results.xml

@@ -1,8 +1,8 @@
 from db.connection import connect_to_db  # Import pour la connexion
 import psycopg2
-import json
 from dotenv import load_dotenv
 import os
+from flask import Flask, jsonify
 
 # Charger le fichier .env situé à la racine du projet
 load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "../.env"))
@@ -21,7 +21,7 @@ def get_environment_variable(key, default=None):
 # Route de base
 @app.route('/')
 def home():
-    return jsonify({"message": "Bienvenue sur l'API Flask!"})
+    return jsonify({"message": "Welcome to the Shop API!"})
 
 
 # Route pour récupérer les items
