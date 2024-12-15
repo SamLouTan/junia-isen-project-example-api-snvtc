@@ -13,4 +13,7 @@ terraform.tfstate.backup
 
 #Ignore variables env
 *.env
+<<<<<<< HEAD
 
+=======
+>>>>>>> b3ad59e463bdc9cdd520b56981a7ce53ddb9ff42
